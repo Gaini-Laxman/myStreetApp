@@ -1,0 +1,18 @@
+/* Centered register card sizing */
+.registerPage {
+  padding: 14px;
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* Remove inline marginTop */
+.registerPage__title {
+  margin-top: 0;
+}
+
+/* Replace inline flex form layout */
+.registerPage__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

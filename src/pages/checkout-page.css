@@ -1,0 +1,57 @@
+/* Main 2-column container (works with your existing .row but safer) */
+.checkoutPage {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 14px;
+  align-items: start;
+}
+
+/* Card padding moved from inline */
+.checkoutPage__card {
+  padding: 14px;
+}
+
+/* Remove inline marginTop:0 from headings */
+.checkoutPage__title {
+  margin-top: 0;
+}
+
+/* Replaces <div style={{ height: 10 }} /> */
+.checkoutPage__gap {
+  height: 10px;
+}
+
+/* Payment radio labels */
+.checkoutPage__radio {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkoutPage__radio--big {
+  font-size: 20px;
+}
+
+.checkoutPage__radio--mt {
+  margin-top: 8px;
+}
+
+/* Summary total text */
+.checkoutPage__total {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+/* Button spacing */
+.checkoutPage__placeBtn {
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* Responsive: stack cards on small screens */
+@media (max-width: 860px) {
+  .checkoutPage {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,393 @@
+{
+  "users": [
+    {
+      "id": "u_admin",
+      "email": "admin@mystreet.com",
+      "passwordHash": "$2a$10$VKDKaE75t5wjpHE53s/i3OG03sFcbDPzC/GutA632r9PHhp.qiHLq",
+      "isAdmin": true,
+      "createdAt": "2026-01-01T10:00:00.000Z"
+    },
+    {
+      "id": "u_1767355096721",
+      "email": "laxman@gmail.com",
+      "passwordHash": "$2a$10$lFHuywZlBZqvIRHdeDrYhOoy5SsFhitVBQSmbKSj3g1f2mgidDfxu",
+      "isAdmin": false,
+      "createdAt": "2026-01-02T11:58:16.841Z"
+    },
+    {
+      "id": "u_1767356440019",
+      "email": " admin@mystreet.com",
+      "passwordHash": "$2a$10$1FCLUbd4Rj1UzxCuNo7KNuEdoVYaKFxdi4gVrmru6WNsrvxDTocae",
+      "isAdmin": false,
+      "createdAt": "2026-01-02T12:20:40.124Z"
+    },
+    {
+      "id": "u_1767356537489",
+      "email": "abc@gmail.com",
+      "passwordHash": "$2a$10$D3twvtaKegs1Y8XgV3M.I.IT7WetqSrVFwVavgTn3kT2CG4WXb90O",
+      "isAdmin": false,
+      "createdAt": "2026-01-02T12:22:17.590Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "p1",
+      "name": "Air Max 90",
+      "brand": "Nike",
+      "description": "Classic retro vibe with everyday comfort.",
+      "price": 119.99,
+      "imageUrl": "https://picsum.photos/seed/airmax90/800/600",
+      "sizesCsv": "7,8,9,10",
+      "stockQty": 50,
+      "createdAt": "2026-01-01T10:00:00.000Z"
+    },
+    {
+      "id": "p2",
+      "name": "Ultraboost",
+      "brand": "Adidas",
+      "description": "Responsive cushioning for long walks and runs.",
+      "price": 139.99,
+      "imageUrl": "https://picsum.photos/seed/ultraboost/800/600",
+      "sizesCsv": "7,8,9,10,11",
+      "stockQty": 35,
+      "createdAt": "2026-01-01T10:00:00.000Z"
+    },
+    {
+      "id": "p3",
+      "name": "Chuck Taylor All Star",
+      "brand": "Converse",
+      "description": "Timeless canvas classic.",
+      "price": 64.99,
+      "imageUrl": "https://picsum.photos/seed/chuck/800/600",
+      "sizesCsv": "6,7,8,9,10,11",
+      "stockQty": 60,
+      "createdAt": "2026-01-01T10:00:00.000Z"
+    },
+    {
+      "id": "p4",
+      "name": "Classic Leather",
+      "brand": "Reebok",
+      "description": "Clean look, soft leather feel.",
+      "price": 84.99,
+      "imageUrl": "https://picsum.photos/seed/reebok/800/600",
+      "sizesCsv": "7,8,9,10,11",
+      "stockQty": 40,
+      "createdAt": "2026-01-01T10:00:00.000Z"
+    },
+    {
+      "id": "p5",
+      "name": "RS-X",
+      "brand": "Puma",
+      "description": "Chunky style with comfort tech.",
+      "price": 99.99,
+      "imageUrl": "https://picsum.photos/seed/rsx/800/600",
+      "sizesCsv": "7,8,9,10",
+      "stockQty": 28,
+      "createdAt": "2026-01-01T10:00:00.000Z"
+    },
+    {
+      "id": "p6",
+      "name": "Old Skool",
+      "brand": "Vans",
+      "description": "Skate heritage with daily wearability.",
+      "price": 74.99,
+      "imageUrl": "https://picsum.photos/seed/oldskool/800/600",
+      "sizesCsv": "6,7,8,9,10",
+      "stockQty": 45,
+      "createdAt": "2026-01-01T10:00:00.000Z"
+    },
+    {
+      "id": "p7",
+      "name": "Gel-Kayano",
+      "brand": "ASICS",
+      "description": "Stability runner with premium support.",
+      "price": 149.99,
+      "imageUrl": "https://picsum.photos/seed/kayano/800/600",
+      "sizesCsv": "7,8,9,10,11",
+      "stockQty": 22,
+      "createdAt": "2026-01-01T10:00:00.000Z"
+    },
+    {
+      "id": "p8",
+      "name": "574 Core",
+      "brand": "New Balance",
+      "description": "Iconic silhouette with everyday comfort.",
+      "price": 89.99,
+      "imageUrl": "https://picsum.photos/seed/nb574/800/600",
+      "sizesCsv": "7,8,9,10,11",
+      "stockQty": 33,
+      "createdAt": "2026-01-01T10:00:00.000Z"
+    },
+    {
+      "id": "p_1767385630659",
+      "createdAt": "2026-01-02T20:27:10.665Z",
+      "name": "Max",
+      "brand": "Reebok",
+      "description": "",
+      "price": 999,
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlv2WrfD_0DYLsr3nS7IhNTZBZLOh6OlFD1fdenpdWg3Hnzff0CUx9tFs&s",
+      "sizesCsv": "7,8,9,10",
+      "stockQty": 3
+    },
+    {
+      "id": "p_1767447403808",
+      "createdAt": "2026-01-03T13:36:43.809Z",
+      "name": "Nike medium",
+      "brand": "Nike",
+      "description": "Nike shoes",
+      "price": 2900,
+      "imageUrl": "https://images.vegnonveg.com/resized/680X800/14573/nike-air-force-1-07-lx-sailrose-gold-6954fe382a623.jpg?format=webp",
+      "sizesCsv": "7,8,9,10",
+      "stockQty": 40
+    },
+    {
+      "id": "p_1767447619994",
+      "createdAt": "2026-01-03T13:40:19.995Z",
+      "name": "Nike women",
+      "brand": "Nike",
+      "description": "Nike women",
+      "price": 3999,
+      "imageUrl": "https://images.vegnonveg.com/resized/680X800/4412/wmns-air-force-1-07-whitewhite-white-white-67d126c799baf.jpg?format=webp",
+      "sizesCsv": "7,8,9,10",
+      "stockQty": 20
+    },
+    {
+      "id": "p_1767448942178",
+      "createdAt": "2026-01-03T14:02:22.178Z",
+      "name": "Nike AIR Max 950",
+      "brand": "Nike",
+      "description": "Nike AIR Max 950",
+      "price": 999,
+      "imageUrl": "https://images.vegnonveg.com/resized/680X800/13928/nike-air-max-95-og-whiteblack-68c26027dadc8.jpg?format=webp",
+      "sizesCsv": "s, m, L",
+      "stockQty": 9
+    }
+  ],
+  "orders": [
+    {
+      "id": "o_1767356363235",
+      "userId": "u_1767355096721",
+      "status": "PLACED",
+      "paymentMode": "COD",
+      "shippingAddress": {
+        "fullName": "Gaini Laxman",
+        "phone": "9999999999",
+        "addressLine1": "Hyderabad",
+        "addressLine2": "",
+        "city": "Hyderabad ",
+        "state": "INDIA ",
+        "postalCode": "500037"
+      },
+      "total": 139.99,
+      "createdAt": "2026-01-02T12:19:23.235Z",
+      "items": [
+        {
+          "id": "oi_1767356363235_8b6ea0791662e8",
+          "productId": "p2",
+          "productName": "Ultraboost",
+          "size": "7",
+          "qty": 1,
+          "unitPrice": 139.99,
+          "lineTotal": 139.99
+        }
+      ]
+    },
+    {
+      "id": "o_1767356598240",
+      "userId": "u_1767356537489",
+      "status": "PLACED",
+      "paymentMode": "MOCK_UPI",
+      "shippingAddress": {
+        "fullName": "Laxman",
+        "phone": "9999999999",
+        "addressLine1": "Hyderabad",
+        "addressLine2": "Hyderabad",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "postalCode": "500072"
+      },
+      "total": 74.99,
+      "createdAt": "2026-01-02T12:23:18.240Z",
+      "items": [
+        {
+          "id": "oi_1767356598240_14ff8544039bb",
+          "productId": "p6",
+          "productName": "Old Skool",
+          "size": "6",
+          "qty": 1,
+          "unitPrice": 74.99,
+          "lineTotal": 74.99
+        }
+      ]
+    },
+    {
+      "id": "o_1767361082987",
+      "userId": "u_1767355096721",
+      "status": "PLACED",
+      "paymentMode": "COD",
+      "shippingAddress": {
+        "fullName": "Gaini Laxman",
+        "phone": "09000060628",
+        "addressLine1": "H.No.5-25-317/1 Sriram Nagar Bekary Gadda Jagadgirigutta",
+        "addressLine2": "",
+        "city": "Hyderabad ",
+        "state": "INDIA ",
+        "postalCode": "500037"
+      },
+      "total": 64.99,
+      "createdAt": "2026-01-02T13:38:02.987Z",
+      "items": [
+        {
+          "id": "oi_1767361082987_4dd17a58951708",
+          "productId": "p3",
+          "productName": "Chuck Taylor All Star",
+          "size": "6",
+          "qty": 1,
+          "unitPrice": 64.99,
+          "lineTotal": 64.99
+        }
+      ]
+    },
+    {
+      "id": "o_1767373829716",
+      "userId": "u_1767355096721",
+      "status": "PLACED",
+      "paymentMode": "COD",
+      "shippingAddress": {
+        "fullName": "Gaini Laxman",
+        "phone": "09000060628",
+        "addressLine1": "H.No.5-25-317/1 Sriram Nagar Bekary Gadda Jagadgirigutta",
+        "addressLine2": "",
+        "city": "Hyderabad ",
+        "state": "INDIA ",
+        "postalCode": "500037"
+      },
+      "total": 839.94,
+      "createdAt": "2026-01-02T17:10:29.716Z",
+      "items": [
+        {
+          "id": "oi_1767373829716_283e5eea5f5798",
+          "productId": "p2",
+          "productName": "Ultraboost",
+          "size": "7",
+          "qty": 6,
+          "unitPrice": 139.99,
+          "lineTotal": 839.94
+        }
+      ]
+    },
+    {
+      "id": "o_1767451910871",
+      "userId": "u_1767355096721",
+      "status": "PLACED",
+      "paymentMode": "COD",
+      "shippingAddress": {
+        "fullName": "Gaini Laxman",
+        "phone": "09000060628",
+        "addressLine1": "H.No.5-25-317/1 Sriram Nagar Bekary Gadda Jagadgirigutta",
+        "addressLine2": "Allwyn Colony, Kukkatpally",
+        "city": "Hyderabad ",
+        "state": "INDIA ",
+        "postalCode": "500037"
+      },
+      "total": 139.99,
+      "createdAt": "2026-01-03T14:51:50.886Z",
+      "items": [
+        {
+          "id": "oi_1767451910870_430e3cfe6b8ab8",
+          "productId": "p2",
+          "productName": "Ultraboost",
+          "size": "7",
+          "qty": 1,
+          "unitPrice": 139.99,
+          "lineTotal": 139.99
+        }
+      ]
+    },
+    {
+      "id": "o_1767453088785",
+      "userId": "u_1767355096721",
+      "status": "PLACED",
+      "paymentMode": "MOCK_UPI",
+      "shippingAddress": {
+        "fullName": "Gaini Laxman",
+        "phone": "09000060628",
+        "addressLine1": "H.No.5-25-317/1 Sriram Nagar Bekary Gadda Jagadgirigutta",
+        "addressLine2": "Allwyn Colony, Kukkatpally",
+        "city": "Hyderabad ",
+        "state": "INDIA ",
+        "postalCode": "500037"
+      },
+      "total": 999,
+      "createdAt": "2026-01-03T15:11:28.822Z",
+      "items": [
+        {
+          "id": "oi_1767453088784_b83119a6029c7",
+          "productId": "p_1767448942178",
+          "productName": "Nike AIR Max 950",
+          "size": "m",
+          "qty": 1,
+          "unitPrice": 999,
+          "lineTotal": 999
+        }
+      ]
+    },
+    {
+      "id": "o_1767453863056",
+      "userId": "u_1767355096721",
+      "status": "PLACED",
+      "paymentMode": "MOCK_UPI",
+      "shippingAddress": {
+        "fullName": "Gaini Laxman",
+        "phone": "09000060628",
+        "addressLine1": "H.No.5-25-317/1 Sriram Nagar Bekary Gadda Jagadgirigutta",
+        "addressLine2": "Allwyn Colony, Kukkatpally",
+        "city": "Hyderabad ",
+        "state": "INDIA ",
+        "postalCode": "500037"
+      },
+      "total": 119.99,
+      "createdAt": "2026-01-03T15:24:23.056Z",
+      "items": [
+        {
+          "id": "oi_1767453863056_9e0c8aca67a44",
+          "productId": "p1",
+          "productName": "Air Max 90",
+          "size": "7",
+          "qty": 1,
+          "unitPrice": 119.99,
+          "lineTotal": 119.99
+        }
+      ]
+    },
+    {
+      "id": "o_1767454331170",
+      "userId": "u_1767355096721",
+      "status": "PLACED",
+      "paymentMode": "COD",
+      "shippingAddress": {
+        "fullName": "Bheemanna",
+        "phone": "09392291718",
+        "addressLine1": "H.No. 4-32-41/83, Kamalaprasanna Nagar",
+        "addressLine2": "Allwyn Colony, Kukkatpally",
+        "city": "Hyderabad",
+        "state": "Telangana",
+        "postalCode": "500072"
+      },
+      "total": 999,
+      "createdAt": "2026-01-03T15:32:11.170Z",
+      "items": [
+        {
+          "id": "oi_1767454331170_0876985c96301",
+          "productId": "p_1767448942178",
+          "productName": "Nike AIR Max 950",
+          "size": "s",
+          "qty": 1,
+          "unitPrice": 999,
+          "lineTotal": 999
+        }
+      ]
+    }
+  ],
+  "orderItems": []
+}

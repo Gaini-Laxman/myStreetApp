@@ -1,0 +1,289 @@
+/* =========================
+   THEME + TOKENS
+   ========================= */
+:root{
+  /* Don’t force light; your app is dark */
+  color-scheme: dark;
+
+  --bg: #0b0f14;
+  --surface: #0f1724;
+  --surface-2: #121a27;
+  --surface-input: #0b1220;
+
+  --text: #e8eef6;
+  --border: rgba(255,255,255,.10);
+  --border-strong: rgba(255,255,255,.14);
+
+  --shadow: 0 10px 30px rgba(0,0,0,.25);
+
+  --primary: #2a6df5;
+  --danger-bg: #2b1212;
+  --danger-border: rgba(255,90,90,.35);
+
+  --radius-sm: 12px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+
+  --gap-1: 10px;
+  --gap-2: 12px;
+  --gap-3: 14px;
+
+  --container: 1100px;
+
+  --fz-base: 16px;
+  --fz-lg: 18px;
+  --fz-xl: 20px;
+}
+
+/* =========================
+   BASE
+   ========================= */
+*{ box-sizing:border-box; }
+
+body{
+  margin:0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  background: var(--bg);
+  color: var(--text);
+}
+
+a{ color: inherit; text-decoration:none; }
+
+/* =========================
+   LAYOUT
+   ========================= */
+.container{
+  /* width: min(var(--container), 2000vw); */
+  margin: 0 auto;
+  padding: 18px 0 42px;
+  padding-left: 50px;
+  padding-top: 0px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+
+/* =========================
+   NAV
+   ========================= */
+.nav{
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: rgba(11, 15, 20, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.nav-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding: 14px 0;
+  gap: var(--gap-2);
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap: 10px;
+  font-weight: 800;
+  letter-spacing: .4px;
+  color: #fff;
+  font-size: 28px; /* slightly smaller so it wraps nicer */
+  flex-wrap: wrap;
+}
+
+.badge{
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #162033;
+  border: 1px solid rgba(255,255,255,.10);
+  font-size: 12px;
+  color: #fff;
+}
+
+.actions{
+  display:flex;
+  align-items:center;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+/* =========================
+   BUTTONS
+   ========================= */
+.btn,
+a.btn{
+  position: relative;
+  z-index: 2;
+  border: 1px solid var(--border-strong);
+  background: var(--surface-2);
+  color: var(--text);
+  border-radius: var(--radius-sm);
+  padding: 10px 12px;
+  cursor: pointer;
+  font-weight: 650;
+  font-size: 13px;
+}
+
+.btn:hover{ filter: brightness(1.06); }
+
+.btn.primary{
+  background: var(--primary);
+  border-color: rgba(42,109,245,.6);
+}
+
+.btn.danger{
+  background: var(--danger-bg);
+  border-color: var(--danger-border);
+}
+
+.btn.ghost{ background: transparent; }
+
+/* =========================
+   CARDS + GRID
+   ========================= */
+.grid, .card{ position: relative; z-index: 1; }
+
+.card{
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+/* Better than fixed 4 columns (still looks same) */
+.grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--gap-3);
+}
+
+/* =========================
+   PRODUCT CARD
+   ========================= */
+.product-img{
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  background: var(--bg);
+  pointer-events: none;
+}
+
+.p-body{
+  padding: 12px;
+  display:flex;
+  flex-direction:column;
+  gap: 8px;
+}
+
+.p-title{
+  font-weight: 800;
+  font-size: var(--fz-xl);
+  line-height: 1.2;
+}
+
+.p-meta{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 8px;
+  opacity: .92;
+  font-size: 13px;
+}
+
+.p-price{
+  font-weight: 850;
+  font-size: var(--fz-xl);
+  color: var(--primary); /* instead of hardcoded blue */
+}
+
+/* =========================
+   FILTERS + INPUTS
+   ========================= */
+.filters{
+  display:flex;
+  gap: var(--gap-1);
+  flex-wrap: wrap;
+  margin: 16px 0;
+  font-size: var(--fz-lg);
+}
+
+.input,
+select,
+textarea{
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-strong);
+  background: var(--surface-input);
+  color: var(--text);
+  font-size: var(--fz-lg);
+  outline: none;
+}
+
+.input:focus,
+select:focus,
+textarea:focus{
+  border-color: rgba(42,109,245,.55);
+}
+
+/* =========================
+   ROWS
+   ========================= */
+.row{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap-2);
+}
+
+@media (max-width: 640px){
+  .row{ grid-template-columns: 1fr; }
+  .brand{ font-size: 24px; }
+}
+
+/* =========================
+   TABLE
+   ========================= */
+.table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td{
+  padding: 10px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  vertical-align: middle;
+}
+
+/* =========================
+   HELPERS
+   ========================= */
+.muted{
+  opacity: .75;
+  font-size: var(--fz-lg);
+}
+
+.toast{
+  margin: 12px 0;
+  padding: 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-strong);
+  background: var(--surface-2);
+}
+
+.toast.error{
+  border-color: var(--danger-border);
+  background: var(--danger-bg);
+}
+
+.footer-note{
+  opacity: .7;
+  font-size: 12px;
+  margin-top: 14px;
+}

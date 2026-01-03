@@ -1,0 +1,90 @@
+.adminForm {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.adminForm__header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+
+.adminForm__title {
+  margin: 0;
+}
+
+.adminForm__spacer {
+  height: 12px;
+}
+
+.adminForm__error {
+  color: crimson;
+  margin-bottom: 10px;
+}
+
+.adminForm__status {
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.adminForm__card {
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 14px;
+  padding: 14px;
+  display: grid;
+  gap: 10px;
+  background: rgba(255,255,255,0.03);
+}
+
+.adminForm__input,
+.adminForm__textarea {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.04);
+  color: inherit;
+  outline: none;
+}
+
+.adminForm__input::placeholder,
+.adminForm__textarea::placeholder {
+  color: rgba(255,255,255,0.55);
+}
+
+.adminForm__row2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.adminForm__actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.adminForm__btn {
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: transparent;
+  color: inherit;
+}
+
+.adminForm__btn--ghost {
+  background: transparent;
+}
+
+.adminForm__btn--primary {
+  border: 1px solid rgba(0,123,255,0.9);
+  background: rgba(0,123,255,0.95);
+  color: white;
+}
+
+.adminForm__btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}

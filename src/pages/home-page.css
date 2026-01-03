@@ -1,0 +1,4 @@
+/* HomePage filter select wrappers (replaces inline minWidth) */
+.homeFilters__selectWrap {
+  min-width: 180px;
+}

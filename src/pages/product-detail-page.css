@@ -1,0 +1,39 @@
+/* Card padding moved from inline */
+.productDetail {
+  padding: 14px;
+}
+
+/* Image border radius moved from inline */
+.productDetail__img {
+  border-radius: 14px;
+}
+
+/* Right side column layout */
+.productDetail__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Remove inline margin:0 */
+.productDetail__title {
+  margin: 0;
+}
+
+/* Price block style */
+.productDetail__price {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+/* Actions row moved from inline */
+.productDetail__actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.orderConfirm__address {
+  margin-top: 10px;
+}
+

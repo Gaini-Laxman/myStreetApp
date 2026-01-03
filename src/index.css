@@ -1,0 +1,165 @@
+/* /* =========================
+   THEME TOKENS
+   ========================= */
+:root{
+  --bg-main:#0b0f14;
+  --bg-surface:#121821;
+  --bg-surface-2:#161d29;
+  --border-subtle:#1f2937;
+
+  --text-primary:#e5e7eb;
+  --text-secondary:#9ca3af;
+  --text-muted:#6b7280;
+
+  --brand-primary:#3b82f6;
+  --brand-primary-hover:#2563eb;
+  --brand-danger:#ef4444;
+
+  --shadow-soft:0 8px 24px rgba(0,0,0,.4);
+
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* =========================
+   BASE RESET
+   ========================= */
+*{ box-sizing:border-box; }
+
+html, body{ height:100%; }
+
+body{
+  margin:0;
+  background: radial-gradient(1200px circle at top, #0f172a, #020617);
+  color: var(--text-primary);
+}
+
+/* Links */
+a{
+  color: var(--brand-primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+a:hover{ color: var(--brand-primary-hover); }
+
+/* Headings (keep simple, avoid huge default) */
+h1,h2,h3{ margin: 0 0 10px; line-height: 1.15; }
+
+/* =========================
+   BUTTONS (don’t override your .btn)
+   ========================= */
+button{
+  font-family: inherit;
+}
+
+/* =========================
+   UI PRIMITIVES
+   ========================= */
+.muted{ color: var(--text-muted); }
+
+.card{
+  background: linear-gradient(180deg, var(--bg-surface), #0b1220);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 14px;
+  box-shadow: var(--shadow-soft);
+  transition: transform .2s ease, background .2s ease;
+}
+.card:hover{
+  transform: translateY(-2px);
+  background: var(--bg-surface-2);
+}
+
+.product-img{
+  width: 72px;
+  height: 72px;
+  border-radius: 12px;
+  object-fit: cover;
+  background: #000;
+}
+
+.p-title{ font-size: 15px; font-weight: 600; color: var(--text-primary); }
+.p-meta{ font-size: 13px; color: var(--text-secondary); }
+
+/* Buttons */
+.btn{
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  background: transparent;
+  color: inherit;
+}
+
+.btn.primary{
+  background: var(--brand-primary);
+  color: #fff;
+}
+.btn.primary:hover{
+  background: var(--brand-primary-hover);
+}
+
+.btn.delete{
+  background: rgba(239,68,68,.15);
+  color: var(--brand-danger);
+}
+.btn.delete:hover{
+  background: rgba(239,68,68,.25);
+}
+
+/* =========================
+   MODAL (kept, but cleaned)
+   ========================= */
+.modal-root{
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+}
+
+.modal-backdrop{
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,.6);
+}
+
+.modal-content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 420px;
+  max-width: 92vw;
+
+  background: #fff;
+  color: #111;
+
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 20px 60px rgba(0,0,0,.35);
+}
+
+.modal-head{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:12px;
+}
+
+.modal-title{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.modal-x{
+  border: 0;
+  background: transparent;
+  font-size: 22px;
+  cursor: pointer;
+}

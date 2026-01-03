@@ -1,0 +1,17 @@
+/* Card padding moved from inline */
+.orderConfirm {
+  padding: 14px;
+}
+
+/* Remove inline marginTop from h2 */
+.orderConfirm__title {
+  margin-top: 0;
+}
+
+/* Action buttons row (replaces inline flex styles) */
+.orderConfirm__actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}

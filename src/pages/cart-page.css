@@ -1,0 +1,58 @@
+/* Wrapper for the cart card */
+.cartPage {
+  padding: 12px;
+}
+
+/* Table column widths (instead of inline styles) */
+.cartPage__qtyCol {
+  width: 110px;
+}
+
+.cartPage__removeCol {
+  width: 90px;
+}
+
+/* Item cell layout */
+.cartPage__item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.cartPage__img {
+  width: 52px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Strong product title */
+.cartPage__name {
+  font-weight: 850;
+}
+
+/* Qty input small width */
+.cartPage__qtyInput {
+  max-width: 90px;
+}
+
+/* Footer row */
+.cartPage__footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cartPage__total {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.cartPage__footerActions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
