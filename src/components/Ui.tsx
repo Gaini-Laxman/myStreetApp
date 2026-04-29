@@ -1,4 +1,4 @@
-import React from "react";
+
 
 export function Toast({ kind, message }: { kind?: "error"; message: string }) {
   return <div className={`toast ${kind === "error" ? "error" : ""}`}>{message}</div>;

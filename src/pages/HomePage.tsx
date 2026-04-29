@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { api } from "../api/http";
 import { Spinner, Toast } from "../components/Ui";
 import type { Product } from "../components/ProductCard";
